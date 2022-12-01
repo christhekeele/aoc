@@ -1,4 +1,4 @@
-defmodule AoC.Day.One.Part.Two do
+defmodule AoC.TwentyTwentyTwo.Day.One.Part.One do
   @moduledoc """
   Documentation for `One`.
   """
@@ -21,9 +21,7 @@ defmodule AoC.Day.One.Part.Two do
     |> Enum.map(&String.split(&1, "\n"))
     |> Enum.map(&Enum.map(&1, fn string -> Integer.parse(string) end))
     |> Enum.map(&Enum.reduce(&1, 0, fn {integer, _}, acc -> acc + integer end))
-    |> Enum.sort(:desc)
-    |> Enum.take(3)
-    |> Enum.sum()
+    |> Enum.max()
     |> IO.inspect()
   end
 end

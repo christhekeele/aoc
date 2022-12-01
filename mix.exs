@@ -3,12 +3,12 @@ defmodule AoC.MixProject do
 
   def project do
     [
-      apps_path: "day",
+      apps_path: "year",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       apps:
-        File.ls!("day")
-        |> Enum.filter(&File.dir?(Path.join("day", &1)))
+        File.ls!("year")
+        |> Enum.filter(&File.dir?(Path.join("year", &1)))
         |> Enum.map(&String.to_atom/1),
       deps: deps()
     ]

@@ -3,5 +3,6 @@
 ## Usage
 
 ```sh
-env INPUT_FILE=day/1/input/full.txt mix eval "AoC.Day.One.Part.Two.solve()"
+env INPUT_FILE=year/2022/day/1/input/full.txt \
+  mix eval "AoC.TwentyTwentyTwo.Day.One.Part.One.solve()"
 ```
