@@ -12,9 +12,8 @@ defmodule AoC.TwentyTwentyTwo.Day.One.Part.Two do
       :world
 
   """
-  def solve do
-    "INPUT_FILE"
-    |> System.fetch_env!()
+  def solve(input \\ System.fetch_env!("INPUT_FILE")) do
+    input
     |> Path.absname()
     |> File.read!()
     |> String.split("\n\n")
@@ -24,6 +23,5 @@ defmodule AoC.TwentyTwentyTwo.Day.One.Part.Two do
     |> Enum.sort(:desc)
     |> Enum.take(3)
     |> Enum.sum()
-    |> IO.inspect()
   end
 end

@@ -12,9 +12,8 @@ defmodule AoC.TwentyTwentyTwo.Day.One.Part.One do
       :world
 
   """
-  def solve do
-    "INPUT_FILE"
-    |> System.fetch_env!()
+  def solve(input \\ System.fetch_env!("INPUT_FILE")) do
+    input
     |> Path.absname()
     |> File.read!()
     |> String.split("\n\n")
@@ -22,6 +21,5 @@ defmodule AoC.TwentyTwentyTwo.Day.One.Part.One do
     |> Enum.map(&Enum.map(&1, fn string -> Integer.parse(string) end))
     |> Enum.map(&Enum.reduce(&1, 0, fn {integer, _}, acc -> acc + integer end))
     |> Enum.max()
-    |> IO.inspect()
   end
 end
