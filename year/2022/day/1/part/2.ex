@@ -1,20 +1,6 @@
 defmodule AoC.TwentyTwentyTwo.Day.One.Part.Two do
-  @moduledoc """
-  Documentation for `One`.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> One.hello()
-      :world
-
-  """
-  def solve(input \\ System.fetch_env!("INPUT_FILE")) do
-    input
-    |> Path.absname()
+  def solve(input_file \\ System.fetch_env!("INPUT_FILE")) do
+    input_file
     |> File.read!()
     |> String.split("\n\n")
     |> Enum.map(&String.split(&1, "\n"))
