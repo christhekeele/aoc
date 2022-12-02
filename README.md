@@ -3,9 +3,10 @@
 ## Usage
 
 ```sh
-env INPUT_FILE=year/2022/day/1/input/full.txt \
+env INPUT_FILE=day/2/input/full.txt \
   mix eval """
-  AoC.TwentyTwentyTwo.Day.One.Part.One.solve
+  AoC.TwentyTwentyTwo.Day.Two.Input.parse
+  |> AoC.TwentyTwentyTwo.Day.Two.Part.One.solve
   |> IO.inspect
   """
 ```
