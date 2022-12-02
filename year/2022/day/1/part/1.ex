@@ -4,8 +4,11 @@ defmodule AoC.TwentyTwentyTwo.Day.One.Part.One do
     |> File.read!()
     |> String.split("\n\n")
     |> Enum.map(&String.split(&1, "\n"))
-    |> Enum.map(&Enum.map(&1, fn string -> Integer.parse(string) end))
-    |> Enum.map(&Enum.reduce(&1, 0, fn {integer, _}, acc -> acc + integer end))
+    |> Enum.map(fn inputs ->
+      inputs
+      |> Enum.map(&String.to_integer/1)
+      |> Enum.sum
+    end)
     |> Enum.max()
   end
 end
