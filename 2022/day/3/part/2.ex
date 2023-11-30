@@ -1,4 +1,4 @@
-defmodule AoC.TwentyTwentyTwo.Day.Three.Part.Two do
+defmodule AoC.Day.Three.Part.Two do
   @priorities "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
   |> String.codepoints()
   |> Enum.with_index(1)

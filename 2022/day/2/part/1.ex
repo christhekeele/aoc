@@ -1,4 +1,4 @@
-defmodule AoC.TwentyTwentyTwo.Day.Two.Part.One do
+defmodule AoC.Day.Two.Part.One do
   def solve(input) do
     input
     |> Enum.map(&score_round/1)

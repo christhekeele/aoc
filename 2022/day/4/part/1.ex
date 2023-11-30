@@ -1,4 +1,4 @@
-defmodule AoC.TwentyTwentyTwo.Day.Four.Part.One do
+defmodule AoC.Day.Four.Part.One do
   def solve(input) do
     input
     |> Enum.filter(fn
