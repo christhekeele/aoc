@@ -6,7 +6,7 @@
 env INPUT_FILE=day/2/input/full.txt \
   mix eval """
   AoC.Day.Two.Input.parse
-  |> AoC.Day.Two.Part.One.solve
+  |> AoC.Day.Two.Part.Two.solve
   |> IO.inspect
   """
 ```
