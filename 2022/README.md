@@ -1,12 +1,12 @@
-# Advent of Code 2022
+# Advent of Code 2023
 
 ## Usage
 
 ```sh
-env INPUT_FILE=day/2/input/full.txt \
+env INPUT_FILE=day/3/input/full.txt \
   mix eval """
-  AoC.Day.Two.Input.parse
-  |> AoC.Day.Two.Part.Two.solve
+  AoC.Day.Three.Input.parse
+  |> AoC.Day.Three.Part.Two.solve
   |> IO.inspect
   """
 ```
