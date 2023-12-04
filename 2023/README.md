@@ -3,10 +3,11 @@
 ## Usage
 
 ```sh
-env INPUT_FILE=day/1/input/part/2/example.txt \
+env INPUT_FILE=day/4/input/example.txt \
   mix eval """
-  AoC.Day.One.Input.parse
-  |> AoC.Day.One.Part.Two.solve
+  AoC.Day.Four.Input.parse
+  # |> AoC.Day.Four.Part.One.solve
+  |> AoC.Day.Four.Part.Two.solve
   |> IO.inspect
   """
 ```
